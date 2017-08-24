@@ -167,6 +167,7 @@ module.exports = {
             options: {
               limit: 10000,
               name: 'static/media/[name].[hash:8].[ext]',
+              useRelativePath: true,
             },
           },
           // Process JS with Babel.
@@ -249,6 +250,7 @@ module.exports = {
             exclude: [/\.js$/, /\.html$/, /\.json$/],
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
+              useRelativePath: true,
             },
           },
           // ** STOP ** Are you adding a new loader?

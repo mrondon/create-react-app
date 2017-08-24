@@ -164,6 +164,7 @@ module.exports = {
             options: {
               limit: 10000,
               name: 'static/media/[name].[hash:8].[ext]',
+              useRelativePath: true,
             },
           },
           // Process JS with Babel.
@@ -233,6 +234,7 @@ module.exports = {
             loader: require.resolve('file-loader'),
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
+              useRelativePath: true,
             },
           },
         ],
